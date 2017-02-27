@@ -4,14 +4,14 @@ import time
 import commands
 
 pum = 12
-count = 0.1
+count = 5
 print("____APP Started____")
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 GPIO.setup(pum, GPIO.OUT)
 print(str(commands.getoutput("ls /var/isaax/project/")))
 print(str(commands.getoutput("ps aux | grep app")))
-
+print(count)
 while True:
     GPIO.output(pum, True)
     #print(str(commands.getoutput("ls /var/isaax/project/")))
