@@ -4,7 +4,7 @@ import time
 import commands
 
 pum = 12
-count = 1
+count = 0.1
 print("____APP Started____")
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
